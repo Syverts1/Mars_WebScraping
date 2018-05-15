@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="favicon.ico">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+
+    <!-- Latest News -->
+    <div id="latest-news">
+      <h3>Latest Mars News</h3>
+      <h6>{{mars_data.news_title}}</h6>
+      <p>{{mars_data.news_p}}</p>
+    </div>
+    
+    <div class="row bg-light">
+      <div class="col-md-8">
+          <h3>Featured Mars Image</h3>
+          <img src="https://www.jpl.nasa.gov/spaceimages/images/wallpaper/PIA18846-1920x1200.jpg" alt="Featured Image of Mars" width="100%" height="auto">
+      </div>
+      <div class="col-md-4">
+        <div class="container border border-dark rounded  mt-2">
+          <h6>Current Weather on Mars</h6>
+          <p>{{mars_data.mars_weather}}</p>
+        </div>
+        <div class="container mt-4">
+          <h6>Mars Facts</h6>
+          <p>{DATA_TABLE}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row border-bottom">
+      <h3>Mars Hemispheres</h3>
+    </div>
+    <h1>hi
+      
+    </h1>
+    
+
+  </div>
+</body>
+
+</html>
+
